@@ -1,0 +1,52 @@
+html,body{
+/*padding espaciado hacia adentro del elemento*/
+  padding: 0px;
+/*margin espaciado hacia afuera del elemento*/
+  margin:0px;
+/* tipografia: tamaño letra */
+  font-size: 12px;
+/* tipografia: fuente de la letra   */
+  font-family: helvetica;
+}
+/* estilos de navBar */
+nav{
+/* flex ayuda a pasar elementos de vertical a horizontal, forma en que se despliega */
+  display: flex;
+/* color de fondo */
+  background-color: green;
+/* generar espacios */
+  padding: 10px;
+/* color de letra */
+  color:white;
+/* separar los elementos de un lado hacia el otro */
+  justify-content: space-between;
+/* alinear hacia el centro vertical, los elementos del nav */
+  align-items: center;
+
+
+}
+
+/* anidacion de estilos, para coger una clase que esta dentro de otra */
+nav ul{
+/* pasar elementos de vertical a horizontal */
+  display: flex;
+}
+
+nav li{
+/* todos los li de nav, tengan un pading a la derecha o izquierda de pixeles */
+  padding-left: 20px;
+/* quitar el circulo o item que lo pinta como lista */
+  list-style: none;
+}
+
+nav li a{
+  /* color del texto */
+    color:gray;
+  /* quitar el texto subrayado o otra decoracion */
+    text-decoration: none;
+}
+
+/* editamos los estilos de un boton de la clase que le pasemos */
+nav li a:hover{
+  color: white;
+}
