@@ -8,7 +8,10 @@ html,body{
 /* tipografia: fuente de la letra   */
   font-family: helvetica;
 }
-/* estilos de navBar */
+
+
+
+/*                                 estilos de navBar                 */
 nav{
 /* flex ayuda a pasar elementos de vertical a horizontal, forma en que se despliega */
   display: flex;
@@ -48,5 +51,42 @@ nav li a{
 
 /* editamos los estilos de un boton de la clase que le pasemos */
 nav li a:hover{
+/* color de las letras al pasar el click como si fuera un boton */
   color: white;
+}
+
+
+/*                             Main Section                      */
+
+.main_section{
+  /* espaciado con padding */
+  padding: 20%;
+  /* alineamos el texto al centro de la pagina */
+  text-align: center;
+}
+
+/* seccion de productos */
+.products{
+  /* fondo de la imagen */
+  background-image: url("../images/paisaje.jpg");
+  /* tamaño de la imagen */
+  height: 50px;
+ /* para que la imagen ocupe el tamaño del div que tiene */
+  background-size: cover;
+  /* para que se alinee hacia el centro, top para que se alinee hacia arriba */
+  background-position: center top;
+  /* padding para divicion entre los elementos y lo que contiene */
+  padding: 20%;
+/* para que se desplieguen de forma horizontal */
+  display: flex;
+}
+
+.product .content{
+  background-color: white;
+  padding: 20px;
+}
+
+.product{
+  /* dividir distancia entre productos */
+  padding: 10px;
 }
