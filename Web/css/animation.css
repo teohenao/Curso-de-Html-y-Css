@@ -1,0 +1,73 @@
+
+
+.fadeIn{
+    /* define la duracion de la animacion        webkit es una herramienta para asegurar que en todos los navegadores se ejecuten las animaciones*/    
+    animation-duration: 4s;
+    -webkit-animation-duration: 4s;
+    /* define que se va a cumplir la regla de ida como de regreso */
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+    /* nomvre de mi animacion */
+    animation-name: fadeIn;
+    -webkit-animation-name: fadeIn;
+}
+/* asi los conectamos, con el nombre  */
+@keyframes fadeIn{
+    /* va a ir de opacidad 0 a opacidad 1 */
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.fadeInDown{
+     animation-duration: 1s;
+     -webkit-animation-duration: 1s;
+     animation-fill-mode: both;
+     -webkit-animation-fill-mode: both;
+     animation-name: fadeInDown;
+     -webkit-animation-name: fadeInDown;
+}
+
+@keyframes fadeInDown{
+    from{
+        opacity: 0;
+        /* transiciones de los elementos el 100% ayuda de que venga desde arriba arriba */
+        -webkit-transform: translate3d(0,-100%,0);
+        transform: translate3d(0,-100%,0);
+    }
+    to{ 
+        /* hacia donde va */
+        opacity: 1;
+        /* llegara a la posicion 0, osea la posicion en donde normalmente deberia estar */
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+    }
+}
+
+.fadeInUp{
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+@keyframes fadeInUp{
+   from{
+       opacity: 0;
+       /* transiciones de los elementos el 100% ayuda de que venga desde arriba arriba */
+       -webkit-transform: translate3d(0,100%,0);
+       transform: translate3d(0,100%,0);
+   }
+   to{ 
+       /* hacia donde va */
+       opacity: 1;
+       /* llegara a la posicion 0, osea la posicion en donde normalmente deberia estar */
+       -webkit-transform: translate3d(0,0,0);
+       transform: translate3d(0,0,0);
+   }
+}
