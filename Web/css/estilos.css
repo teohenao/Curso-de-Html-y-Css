@@ -47,8 +47,6 @@ nav{
   justify-content: space-between;
 /* alinear hacia el centro vertical, los elementos del nav */
   align-items: center;
-
-
 }
 
 /* anidacion de estilos, para coger una clase que esta dentro de otra */
@@ -191,8 +189,8 @@ nav li a:hover{
 
 .mencion .imagen{
   text-align: center;
-  
-  max-width: 1000px;
+  margin: 0;
+  width: 100%;
   border-radius: 0px;
 }
 
