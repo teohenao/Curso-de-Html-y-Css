@@ -14,7 +14,7 @@
   --normal:12px;
 
   /* Box Shadow */
-  --box:0px 0 2px 1px #e6e5e9;
+  --box:0px 0 2px 1px gray;
 }
 /* VARIABLES */
 
@@ -190,6 +190,8 @@ nav li a:hover{
 }
 
 .mencion .imagen{
+  text-align: center;
+  
   max-width: 1000px;
   border-radius: 0px;
 }

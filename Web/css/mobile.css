@@ -1,0 +1,25 @@
+/* Le estoy diciendo que por debajo de los 600 px active estas reglas */
+@media (max-width: 600px){
+
+    .products{
+        /* para que ya no se organicen de forma vertical */
+        display: inherit;
+        /* para que ya no tenga altura determinada, pero crezca de forma natural */
+        height: auto;
+        /* para evtar que se remonte */
+        max-height: none;
+    }
+    .product{
+        margin-top: auto;
+    }
+    .main_section{
+        padding: 4%;
+    }
+    .contenido{
+        display:inherit;
+    }
+    .mencionados{
+        display: inherit;
+    }
+
+}
