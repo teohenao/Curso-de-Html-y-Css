@@ -1,3 +1,4 @@
+/* container padre de row padre de col */
 .container{
     /* para que el container no crezca mas alla del valor determinado */
     max-width: 900px;
@@ -45,6 +46,20 @@
 .col-12{
     width:100%;
 }
+/* sistema de reglas generales para las columnas */
+.col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-9,.col-10,.col-11,.col-12{
 
+    /* padding para que en el momento que un grid tenga mucho texto no se choque con los otros grid al hacer responsive */
+    padding: 10px;
+}
+/* responsive para las columnas  */
+@media (max-width:900px){
+    .row{
+        display: inherit;
+    }
 
-/* container padre de row padre de col */
+    .col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-9,.col-10,.col-11,.col-12{
+        width: 100%;
+    }
+
+}
