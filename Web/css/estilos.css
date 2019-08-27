@@ -33,6 +33,7 @@ html,body{
 
 
 
+
 /*                                 estilos de navBar                 */
 nav{
 /* flex ayuda a pasar elementos de vertical a horizontal, forma en que se despliega */
@@ -216,4 +217,23 @@ nav li a:hover{
   text-align: center;
   /* si la imagen no abarca el 100 porciento, lo que sobre lo aplica tanto a la derecha como izquierda por eso de centra */
   margin: auto;
+}
+
+label{
+  font-size: var(--normal);
+  /* padding-bottom: var(--space); */
+}
+
+/* podemos seleccionar los imputs de una determinada clase asi  */
+.modulo_pago input{
+  /* para separar los label de los inputs */
+  margin-top: var(--space);
+  /* para que lleguen al maximo de ancho */
+  width: 100%;
+  /* le damos altura */
+  height: 35px;
+  /* esquinas redondeadas */
+  border-radius: 2px;
+  /* tipo de borde para que no se vea feo */
+  border: 1px solid var(--black-color);
 }
