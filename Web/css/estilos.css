@@ -1,12 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+/* VARIABLES */
+/* todo lo que pongamos en root podra ser accedido desde las clases de abajo */
+:root {
+  --green-color:#7ACC2D;
+  --white-color:white;
+  --black-color:#313337;
+
+
+  /* Espaciado */
+  --space:10px;
+
+  /* Tipografia */
+  --normal:12px;
+
+  /* Box Shadow */
+  --box:0px 0 2px 1px #e6e5e9;
+}
+/* VARIABLES */
+
+
 html,body{
 /*padding espaciado hacia adentro del elemento*/
   padding: 0px;
 /*margin espaciado hacia afuera del elemento*/
   margin:0px;
 /* tipografia: tamaño letra */
-  font-size: 12px;
+  font-size: var(--normal);
 /* tipografia: fuente de la letra   */
-  font-family: helvetica;
+  font-family: 'Open Sans', sans-serif;
+
 }
 
 
@@ -16,11 +38,11 @@ nav{
 /* flex ayuda a pasar elementos de vertical a horizontal, forma en que se despliega */
   display: flex;
 /* color de fondo */
-  background-color: #7ACC2D;
+  background-color:var(--green-color);
 /* generar espacios */
-  padding: 10px;
+  padding: var(--space);
 /* color de letra */
-  color:white;
+  color:var(--white-color);
 /* separar los elementos de un lado hacia el otro */
   justify-content: space-between;
 /* alinear hacia el centro vertical, los elementos del nav */
@@ -44,7 +66,7 @@ nav li{
 
 nav li a{
   /* color del texto */
-    color:gray;
+    color:var(--black-color);
   /* quitar el texto subrayado o otra decoracion */
     text-decoration: none;
 }
@@ -52,7 +74,7 @@ nav li a{
 /* editamos los estilos de un boton de la clase que le pasemos */
 nav li a:hover{
 /* color de las letras al pasar el click como si fuera un boton */
-  color: white;
+  color:var(--white-color);
 }
 
 
@@ -82,10 +104,10 @@ nav li a:hover{
 }
 
 .product .content{
-  background-color: white;
+  background-color: var(--white-color);
   padding: 15px;
-  generar sombra alrededor del componente
-  box-shadow: 0 0 5px black;
+  /* generar sombra alrededor del componente */
+  box-shadow: var(--box);
 }
 
 .product{
@@ -107,12 +129,12 @@ nav li a:hover{
 /* estilos para el boton de la tarjeta de producto */
 .main_button{
   /* color del boton */
-  background-color: #7ACC2D;
+  background-color:var(--green-color);
 /* 100 para que ocupe todo el espacio de la tarheta */
   width: 100%;
   padding:10px;
-  font-size: 12px;
-  color: white;
+  font-size: var(--normal);
+  color:var(--white-color);
   border:0;
   /* para que aparezca la mano en el mouse como si fuera un boton  */
   cursor: pointer;
