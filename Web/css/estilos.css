@@ -225,7 +225,7 @@ label{
 }
 
 /* podemos seleccionar los imputs de una determinada clase asi  */
-.modulo_pago input{
+.data{
   /* para separar los label de los inputs */
   margin-top: var(--space);
   /* para que lleguen al maximo de ancho */
@@ -236,4 +236,10 @@ label{
   border-radius: 2px;
   /* tipo de borde para que no se vea feo */
   border: 1px solid var(--black-color);
+  /* este atributo le decimos desde donde va a tomar referencia el tamaño, borderbox toma como referencia tanto el padding como el elemento que lo contiene */
+  box-sizing:border-box; 
+
+}
+.modulo_pago .main_button{
+  margin-top: 10px,
 }
