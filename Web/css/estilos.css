@@ -90,7 +90,7 @@ nav li a:hover{
 /* seccion de productos */
 .products{
   /* fondo de la imagen */
-  background-image: url("../images/paisaje.jpg");
+  background-image: url("../images/curve.png");
   /* tamaño de la imagen */
   max-height: 50px;
  /* para que la imagen ocupe el tamaño del div que tiene */

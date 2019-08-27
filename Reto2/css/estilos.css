@@ -1,0 +1,163 @@
+/*
+#  ·················
+#  ··_______________
+#  ·/·___/·___/·___/
+#  /·/__(__··|__··)·
+#  \___/____/____/··
+#  ·················
+*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+/* --------------Variables */
+:root {
+  --green-color: #7acc2d;
+  --while-color: white;
+  --black-color: #313337;
+  /*-------------Espaciado */
+  --space: 10px;
+  /*-------------Espaciado */
+  /*------------ Tipografia */
+  --normal: 12px;
+  /*------------ Tipografia */
+  /*------------ BoxShadow */
+  --box: 0px 0px 2px #5f5b5b;
+  /*------------ BoxShadow */
+  /* --------------Variables */
+}
+
+html,
+body {
+  padding: 0px;
+  margin: 0px;
+  font-size: var(--normal);
+  font-family: "Open Sans", sans-serif;
+}
+
+nav {
+  display: flex;
+  background-color: var(--green-color);
+  padding: var(--space);
+  color: var(--while-color);
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+}
+nav li {
+  padding-left: 20px;
+  list-style: none;
+}
+nav li a {
+  color: var(--black-color);
+  text-decoration: none;
+}
+
+nav li a:hover {
+  color: var(--while-color);
+}
+
+/*--------------------------- Main section */
+
+.main_section {
+  padding: 5%;
+  text-align: center;
+}
+
+.products {
+  background-image: url("../Imagenes/curve.png");
+  max-height: 200px;
+  background-size: cover;
+  background-position: center top;
+  padding: 20%;
+  display: flex;
+}
+.product {
+  padding: 15px;
+  margin-top: -250px;
+}
+.product .content {
+  background-color: var(--while-color);
+  padding: 20px;
+  box-shadow: var(--box);
+}
+.img_content {
+  text-align: center;
+}
+.main_button {
+  background-color: var(--green-color);
+  width: 100%;
+  padding: var(--space);
+  font-size: var(--normal);
+  color: var(--while-color);
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+}
+.main_button:hover {
+  background-color: #5f9e23;
+}
+.contenido {
+  padding: 10%;
+  display: flex;
+}
+.informacion {
+  padding: 0px;
+  margin-top: -250px;
+}
+.imagen {
+  float: left;
+  padding: 15px;
+  margin: 130px 125px 60px 150px;
+}
+
+.Informacion h1 {
+  text-align: center;
+  padding: -15px;
+  margin-block-start: 2px;
+  line-height: 45px;
+  vertical-align: center;
+}
+.Informacion p {
+  text-align: justify;
+  font-size: 1.3em;
+  width: 230px;
+  height: 150px;
+  margin: 2rem auto;
+}
+
+.linea {
+  color: #c5c5c5;
+  size: 150px;
+}
+.titulo {
+  text-align: center;
+}
+.notas {
+  background-color: var(--while-color);
+  display: flex;
+  width: 80px;
+  height: 90px;
+  text-align: justify;
+}
+.mencion {
+  float: left;
+  margin: 120px -410px 150px 430px;
+  padding: 0px 0px 215px 0px;
+  box-shadow: var(--box);
+  border: 1px solid gray;
+}
+.notas img {
+  max-width: 1000px;
+  height: auto;
+  border-radius: 0px;
+}
+.footer {
+  height: 50px;
+  width: 100%;
+  background: #313337;
+  color: white;
+  display: flex;
+  margin-top: 400px;
+  padding: 5px;
+  justify-content: space-between;
+}
