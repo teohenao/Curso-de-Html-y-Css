@@ -201,3 +201,19 @@ nav li a:hover{
   display: flex;
   justify-content: space-between;
 }
+
+/* ------------------------------VENTA--------------------------- */
+.modulo_pago{
+  background-color: var(--white-color);
+  box-shadow: var(--box);
+  /* pading interno */
+  padding:var(--space); 
+}
+.modulo_pago_images{
+  /* maximo de ancho no sea mayor a 200px */
+  max-width: 200px;
+  width: 100%;
+  text-align: center;
+  /* si la imagen no abarca el 100 porciento, lo que sobre lo aplica tanto a la derecha como izquierda por eso de centra */
+  margin: auto;
+}
